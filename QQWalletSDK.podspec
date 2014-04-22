@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name         = "QQWalletSDK"
   s.version      = "0.0.1"
-  s.summary      = "A short description of QQWalletSDK."
+  s.summary      = "QQWalletSDK."
 
   s.description  = <<-DESC
                    A longer description of QQWalletSDK in Markdown format.
@@ -14,13 +14,12 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/yishuiliunian/QQWalletSDK"
-  s.license      = 'MIT (example)'
+  s.license      = 'MIT'
   s.author             = { "Stone Dong" => "stonedong@tencent.com" }
    s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/yishuiliunian/QQWalletSDK"}
-  s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
-  s.exclude_files = 'Classes/Exclude'
-
+  s.source       = { :git => "https://github.com/yishuiliunian/QQWalletSDK.git", :tag => "0.0.1"}
+  s.source_files  = 'QQWalletSDK/Classes', 'QQWalletSDK/Classes/**/*.{h,m}'
+  s.exclude_files = 'QQWalletSDK/Classes/Exclude'
   s.requires_arc = true
 
 end

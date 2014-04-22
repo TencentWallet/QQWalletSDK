@@ -13,7 +13,7 @@ NSString* const kQWURLScheme = @"mqqwallet";
 NSString* const kQWErrorDomain = @"com.tencent.qw.error";
 
 //
- NSString* const kQWPayParamTokenID = @"token_id";
+ NSString* const kQWPayParamTokenID = @"tokenId";
  NSString* const kQWPayParamPubHint =  @"pubHint";
  NSString* const kQWPayParamPubAccountID = @"pubAcc";
 

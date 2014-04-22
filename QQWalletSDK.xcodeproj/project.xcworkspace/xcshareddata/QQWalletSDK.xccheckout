@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69B2EB63-AAE5-48C8-95F6-38D53615A8D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QQWalletSDK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D6D5F5F3-07CD-4FCD-A0CD-646EEEDF16A1</key>
+		<string>https://github.com/yishuiliunian/QQWalletSDK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QQWalletSDK.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D6D5F5F3-07CD-4FCD-A0CD-646EEEDF16A1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yishuiliunian/QQWalletSDK.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D6D5F5F3-07CD-4FCD-A0CD-646EEEDF16A1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D6D5F5F3-07CD-4FCD-A0CD-646EEEDF16A1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QQWalletSDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>

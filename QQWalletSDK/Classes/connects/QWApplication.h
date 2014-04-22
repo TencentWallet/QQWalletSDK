@@ -12,12 +12,20 @@ extern NSString* const kQWAppKeyName;
 extern NSString* const kQWAppKeyUrlScheme;
 extern NSString* const kQWAppKeySDKVersion;
 extern NSString* const kQWAppKeyAPPID;
+extern NSString* const kQWAppKeyType;
+
+
+//
+extern NSString* const kQWAppTypeNative;
+extern NSString* const kQWAppTypeBrowser;
+
 @interface QWApplication : NSObject
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* urlScheme;
 @property (nonatomic, strong) NSString* sdkVersion;
 @property (nonatomic, strong) NSString* appId;
-@property (nonatomic, strong, readonly) NSString* urlSchemePrefix;
+@property (nonatomic, strong) NSString* type;
+@property (nonatomic, strong ,readonly) NSString* urlSchemePrefix;
 + (QWApplication*) shareApplication;
 
 - (NSDictionary*) dictionaryWithAllValues;

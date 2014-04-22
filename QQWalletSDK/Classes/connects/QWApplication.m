@@ -8,9 +8,14 @@
 
 #import "QWApplication.h"
 NSString* const kQWAppKeyName = @"name";
-NSString* const kQWAppKeyUrlScheme = @"url_scheme";
-NSString* const kQWAppKeySDKVersion = @"sdk_version";
-NSString* const kQWAppKeyAPPID=  @"app_id";
+NSString* const kQWAppKeyUrlScheme = @"urlScheme";
+NSString* const kQWAppKeySDKVersion = @"sdkVersion";
+NSString* const kQWAppKeyAPPID=  @"appId";
+NSString* const kQWAppKeyType = @"type";
+
+NSString* const kQWAppTypeNative = @"native";
+NSString* const kQWAppTypeBrowser = @"browser";
+
 @implementation QWApplication
 
 
@@ -24,10 +29,14 @@ NSString* const kQWAppKeyAPPID=  @"app_id";
         share.urlScheme = @"";
         share.sdkVersion = @"0.0.1";
         share.appId = @"invalid";
+        share.type  = kQWAppTypeNative;
     });
     return share;
 }
-
+- (NSString*) urlSchemePrefix
+{
+    return [NSString stringWithFormat:@"%@://",_urlScheme];
+}
 - (void) setValue:(id)value forKey:(NSString *)key
 {
     if ([key isEqual:kQWAppKeyName]) {
@@ -46,6 +55,9 @@ NSString* const kQWAppKeyAPPID=  @"app_id";
     } else if ([key isEqual:kQWAppKeyAPPID])
     {
         _appId = value;
+    } else if ([key isEqual:kQWAppKeyType])
+    {
+        _type = value;
     }
 }
 
@@ -62,6 +74,9 @@ NSString* const kQWAppKeyAPPID=  @"app_id";
     } else if ([key isEqual:kQWAppKeyAPPID])
     {
         return _appId;
+    } else if ([key isEqual:kQWAppKeyType])
+    {
+        return _type;
     }
     return [NSNull null];
 }
@@ -69,10 +84,5 @@ NSString* const kQWAppKeyAPPID=  @"app_id";
 - (NSDictionary*) dictionaryWithAllValues
 {
     return [self dictionaryWithValuesForKeys:@[kQWAppKeyUrlScheme, kQWAppKeySDKVersion, kQWAppKeyName, kQWAppKeyAPPID]];
-}
-
-- (NSString*) urlSchemePrefix
-{
-    return  [NSString stringWithFormat:@"%@://",self.urlScheme];
 }
 @end

@@ -12,8 +12,8 @@
 #import <UIKit/UIKit.h>
 #import "QWApplication.h"
 
-NSString* const kQWTaskKeyIdentifier = @"identifer";
-NSString* const kQWTaskKeyActionName = @"action_name";
+NSString* const kQWTaskKeyIdentifier = @"identifier";
+NSString* const kQWTaskKeyActionName = @"name";
 
 @implementation QWTask
 @synthesize identifier = _identifier;
