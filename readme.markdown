@@ -36,6 +36,7 @@ Iphone QQ支付能力开放SDK封装。
 3. 链接framework：
 ![image](./Documents/imgs/link)
 
+备注：在安装appledoc工具后，执行工程中的document目标将自动生成类文档。
 ###2. 使用framework文件
 
 您可以直接将位于./Framework/QQWalletSDK.framework的库文件链接到您的工程中使用。
@@ -104,3 +105,39 @@ Iphone QQ支付能力开放SDK封装。
 | pubAcc     | NSString* | 需要关注的公共账号唯一标识 |  kQWPayParamPubAccountID |
 | pubHint     | NSString* | 关注公共账号的提示语 |  kQWPayParamPubHint |
 
+您需要实现QQTaskComletion的内容来处理回调：
+
+```
+/**
+ *  进行QQWallet操作之后的回调函数，开发者可以在这里进行，QQWallet动作完成后接受完成结果，并进行处理
+ *
+ *  @param message 包含返回结果信息的对象
+ *  @param error   出错信息，如果出错则改信息不为空，否则为空。
+ */
+typedef void(^QQTaskCompletion)(QWMessage* message, NSError* error);
+```
+
+其中message类的定义为：
+
+```
+/**
+ *  代表QQWallet调用，回调信息的类
+ */
+@interface QWMessage : NSObject
+/**
+ *  回调结果代号，0代表成功，其他值代表出错（并对应响应的出错信息）
+ */
+@property (nonatomic, assign) int code;
+/**
+ *  回调提示信息，如果出错，则代表出错的具体错误信息
+ */
+@property (nonatomic, strong) NSString* message;
+/**
+ *  按照key-value的方式存储回调结果信息
+ */
+@property (nonatomic, strong) NSDictionary* infos;
+
+- (NSDictionary*) dictionaryWithAllValues;
+@end
+
+```

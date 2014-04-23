@@ -63,7 +63,7 @@
 		6580F1D818EBFC7A0041D6C1 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580F1D618EBFC7A0041D6C1 /* Base64.m */; };
 		6580F21518ED0F450041D6C1 /* QWServerPayTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 6580F21318ED0F450041D6C1 /* QWServerPayTask.h */; };
 		6580F21618ED0F450041D6C1 /* QWServerPayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580F21418ED0F450041D6C1 /* QWServerPayTask.m */; };
-		65C940B31904C8EC00DFD9F3 /* readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 65C940B21904C8EC00DFD9F3 /* readme.markdown */; };
+		659A25B8190761FD006393A5 /* readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 659A25B7190761FD006393A5 /* readme.markdown */; };
 		65C940BB1904CA9500DFD9F3 /* QQWalletDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B51904CA9500DFD9F3 /* QQWalletDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65C940BC1904CA9500DFD9F3 /* QQWalletDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C940B61904CA9500DFD9F3 /* QQWalletDefines.m */; };
 		65C940BD1904CA9500DFD9F3 /* QQWalletSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B71904CA9500DFD9F3 /* QQWalletSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,7 +130,7 @@
 		6580F1D618EBFC7A0041D6C1 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		6580F21318ED0F450041D6C1 /* QWServerPayTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWServerPayTask.h; sourceTree = "<group>"; };
 		6580F21418ED0F450041D6C1 /* QWServerPayTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWServerPayTask.m; sourceTree = "<group>"; };
-		65C940B21904C8EC00DFD9F3 /* readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.markdown; sourceTree = "<group>"; };
+		659A25B7190761FD006393A5 /* readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.markdown; sourceTree = SOURCE_ROOT; };
 		65C940B51904CA9500DFD9F3 /* QQWalletDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQWalletDefines.h; sourceTree = "<group>"; };
 		65C940B61904CA9500DFD9F3 /* QQWalletDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQWalletDefines.m; sourceTree = "<group>"; };
 		65C940B71904CA9500DFD9F3 /* QQWalletSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQWalletSDK.h; sourceTree = "<group>"; };
@@ -191,10 +191,10 @@
 		6545159318E98F7A0008055B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				659A25B7190761FD006393A5 /* readme.markdown */,
 				6545159418E98F7A0008055B /* QQWalletSDK-Info.plist */,
 				6545159518E98F7A0008055B /* InfoPlist.strings */,
 				6545159818E98F7A0008055B /* QQWalletSDK-Prefix.pch */,
-				65C940B21904C8EC00DFD9F3 /* readme.markdown */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -441,7 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C940B31904C8EC00DFD9F3 /* readme.markdown in Resources */,
+				659A25B8190761FD006393A5 /* readme.markdown in Resources */,
 				6545159718E98F7A0008055B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
