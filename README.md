@@ -38,7 +38,7 @@ Iphone QQ支付能力开放SDK封装。
 
 ###2. 使用framework文件
 
-您可以直接将位于项目目录下面的QQWalletSDK.framework文件链接到您的工程中使用。
+您可以直接将位于./Framework/QQWalletSDK.framework的库文件链接到您的工程中使用。
 
 ##二、使用说明
 
