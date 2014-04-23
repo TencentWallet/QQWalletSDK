@@ -30,7 +30,7 @@
 		654515B218E98F7A0008055B /* QQWalletSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654515B118E98F7A0008055B /* QQWalletSDKTests.m */; };
 		654515F418E991140008055B /* QQWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = 654515E418E991140008055B /* QQWallet.h */; };
 		654515F518E991140008055B /* QQWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 654515E518E991140008055B /* QQWallet.m */; };
-		654515FA18E991140008055B /* QWPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 654515EA18E991140008055B /* QWPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		654515FA18E991140008055B /* QWPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 654515EA18E991140008055B /* QWPayment.h */; };
 		654515FB18E991140008055B /* QWPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 654515EB18E991140008055B /* QWPayment.m */; };
 		654515FC18E991140008055B /* QWPayTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 654515EC18E991140008055B /* QWPayTask.h */; };
 		654515FD18E991140008055B /* QWPayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 654515ED18E991140008055B /* QWPayTask.m */; };
@@ -64,11 +64,11 @@
 		6580F21518ED0F450041D6C1 /* QWServerPayTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 6580F21318ED0F450041D6C1 /* QWServerPayTask.h */; };
 		6580F21618ED0F450041D6C1 /* QWServerPayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580F21418ED0F450041D6C1 /* QWServerPayTask.m */; };
 		65C940B31904C8EC00DFD9F3 /* readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 65C940B21904C8EC00DFD9F3 /* readme.markdown */; };
-		65C940BB1904CA9500DFD9F3 /* QQWalletDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B51904CA9500DFD9F3 /* QQWalletDefines.h */; };
+		65C940BB1904CA9500DFD9F3 /* QQWalletDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B51904CA9500DFD9F3 /* QQWalletDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65C940BC1904CA9500DFD9F3 /* QQWalletDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C940B61904CA9500DFD9F3 /* QQWalletDefines.m */; };
-		65C940BD1904CA9500DFD9F3 /* QQWalletSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B71904CA9500DFD9F3 /* QQWalletSDK.h */; };
+		65C940BD1904CA9500DFD9F3 /* QQWalletSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B71904CA9500DFD9F3 /* QQWalletSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65C940BE1904CA9500DFD9F3 /* QQWalletSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C940B81904CA9500DFD9F3 /* QQWalletSDK.m */; };
-		65C940BF1904CA9500DFD9F3 /* QWMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B91904CA9500DFD9F3 /* QWMessage.h */; };
+		65C940BF1904CA9500DFD9F3 /* QWMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C940B91904CA9500DFD9F3 /* QWMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65C940C01904CA9500DFD9F3 /* QWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C940BA1904CA9500DFD9F3 /* QWMessage.m */; };
 /* End PBXBuildFile section */
 
@@ -340,16 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C940BF1904CA9500DFD9F3 /* QWMessage.h in Headers */,
-				6580F1CD18EBF5BC0041D6C1 /* SBJson4StreamTokeniser.h in Headers */,
+				65C940BD1904CA9500DFD9F3 /* QQWalletSDK.h in Headers */,
+				65C940BB1904CA9500DFD9F3 /* QQWalletDefines.h in Headers */,
 				654515FA18E991140008055B /* QWPayment.h in Headers */,
+				6580F1CD18EBF5BC0041D6C1 /* SBJson4StreamTokeniser.h in Headers */,
 				6580F1D118EBF5BC0041D6C1 /* SBJson4StreamWriterState.h in Headers */,
 				6580F1C918EBF5BC0041D6C1 /* SBJson4StreamParser.h in Headers */,
 				6580F1CB18EBF5BC0041D6C1 /* SBJson4StreamParserState.h in Headers */,
 				6580F1D318EBF5BC0041D6C1 /* SBJson4Writer.h in Headers */,
 				6580F1CF18EBF5BC0041D6C1 /* SBJson4StreamWriter.h in Headers */,
 				6580F15918EA98BE0041D6C1 /* NSDate+StringFormatter.h in Headers */,
-				65C940BD1904CA9500DFD9F3 /* QQWalletSDK.h in Headers */,
-				65C940BB1904CA9500DFD9F3 /* QQWalletDefines.h in Headers */,
 				6580F1D718EBFC7A0041D6C1 /* Base64.h in Headers */,
 				6545160018E991140008055B /* QWTask.h in Headers */,
 				654515F418E991140008055B /* QQWallet.h in Headers */,
@@ -780,6 +780,7 @@
 				65C940AF1904C6DC00DFD9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
