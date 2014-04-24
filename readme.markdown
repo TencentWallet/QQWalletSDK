@@ -27,7 +27,7 @@ Iphone QQ支付能力开放SDK封装。
 
 ####（2）引入工程的方式
 
-1. git clone http://....
+1. git clone https://github.com/TencentWallet/QQWalletSDK
 
 2. 将QQWalletSDK工程拖入到您的工程当中，并且设置工程依赖关系：
 
