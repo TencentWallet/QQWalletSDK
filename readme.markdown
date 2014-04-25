@@ -37,6 +37,10 @@ Iphone QQ支付能力开放SDK封装。
 ![image](./Documents/imgs/link)
 
 备注：在安装appledoc工具后，执行工程中的document目标将自动生成类文档。
+
+####(3) [使用Example](https://github.com/TencentWallet/QQWalletSDKExample)
+
+
 ###2. 使用framework文件
 
 您可以直接将位于./Framework/QQWalletSDK.framework的库文件链接到您的工程中使用。
